@@ -25,14 +25,14 @@
 
 class AjaxThumbnailRebuild {
 
-	function AjaxThumbnailRebuild() {
-		add_action( 'admin_menu', array(&$this, 'addAdminMenu') );
-		add_filter( 'attachment_fields_to_edit', array(&$this, 'addRebuildSingle'), 10, 2 );
+	function __construct() {
+		add_action( 'admin_menu', array($this, 'addAdminMenu') );
+		add_filter( 'attachment_fields_to_edit', array($this, 'addRebuildSingle'), 10, 2 );
 	}
 
 	function addAdminMenu() {
 		add_management_page( __( 'Rebuild all Thumbnails', 'ajax-thumbnail-rebuild' ), __( 'Rebuild Thumbnails', 'ajax-thumbnail-rebuild'
- ), 'manage_options', 'ajax-thumbnail-rebuild', array(&$this, 'ManagementPage') );
+ ), 'manage_options', 'ajax-thumbnail-rebuild', array($this, 'ManagementPage') );
 	}
 
 	/**
