@@ -11,5 +11,6 @@
             "email": "jodi@jodiwarren.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {}
 }
