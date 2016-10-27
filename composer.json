@@ -1,0 +1,15 @@
+{
+    "name": "jodi/ajax-thumbnail-rebuild",
+    "type": "wordpress-plugin",
+    "authors": [
+        {
+            "name": "junkcoder",
+            "email": "junkcoder@example.com"
+        },
+        {
+            "name": "Jodi Warren",
+            "email": "jodi@jodiwarren.com"
+        }
+    ],
+    "require": {}
+}
